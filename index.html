@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/cube.css">
+    <link rel="stylesheet" href="./style/area-2.css">
+    <link rel="stylesheet" href="./style/area-1.css">
+</head>
+
+<body>
+    <header class="container-cabecalho">
+            <img src="/imgs/logo_alura.png" alt="Logo Alura"/>
+            <button class="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;Encriptador de Texto&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Encriptador de Texto &nbsp;</span>
+            </button>
+    </header>
+    <main class="container-principal">
+        <section>
+            <div class="card-1">
+                <textarea class="card-textarea" placeholder="Digite seu texto aqui"></textarea>
+                <section>            
+                    <div class="texto-atencao">
+                        <i class="bi bi-exclamation-octagon-fill"></i>
+                        <h2 class="texto-oniput">Digite um texto que você deseja <spam>criptografar</spam> ou <spam>descriptografar.</spam></h2>
+                    </div>
+                </section>
+                <div class="botoes">
+                    <button class="btn" onclick="botaoEncriptar()">
+                        Criptografar
+                    </button>
+                    <button class="btn" onclick="botaoDesencriptar()">
+                        Descriptografar
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="container-cube">
+            <div>
+                <div class="cube">
+                <div style="--x:-1; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                </div>
+                <div style="--x:0; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                </div>
+                <div style="--x:1; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                </div>
+                </div>
+                <div class="cube">
+                <div style="--x:-1; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                </div>
+                <div style="--x:0; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                </div>
+                <div style="--x:1; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                </div>
+                </div>
+                <div class="cube">
+                <div style="--x:-1; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                </div>
+                    <div style="--x:0; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                </div>
+                    <div style="--x:1; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+        </section> 
+        <section class=container_area_2>
+            <div class="card">
+                <textarea class="card-textarea-area2" placeholder="Sua mensagem aparece aqui!"></textarea>
+                <div class="texto-atencao"> 
+                    <h6 class="informacao">Apenas letras <spam>minúsculas</spam> e <spam>sem acento.</spam></h6>
+                </div>
+                <div>
+                    <button class="btn-copiar" onclick="copiar()">
+                        copiar
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
